@@ -22,8 +22,8 @@ Here's a quick overview of the repository's structure:
 
 ### Exams
 
-[![Mid_Lab](https://img.shields.io/badge/Mid_Lab-OrangeRed?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab)
-[![Net_Final_Lab](https://img.shields.io/badge/Net_Final_Lab-DarkOrange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
+[![Mid_Lab](https://img.shields.io/badge/Mid_Lab-#FF5733?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab)
+[![Net_Final_Lab](https://img.shields.io/badge/Net_Final_Lab-#FF5733?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
 
 ### Practice
 
