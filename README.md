@@ -1,3 +1,5 @@
+![Banner Image](banner.jpg)
+
 # SP21-BCS-A-007_Web-MERN
 
 Welcome to the SP21-BCS-A-007_Web-MERN repository! This repository is dedicated to the Web Technologies course and serves as a central hub for all course materials, including lecture demonstrations, code samples, labs, quizzes, assignments, and exams.
