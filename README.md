@@ -9,25 +9,26 @@ Here's a quick overview of the repository's structure:
 ### Assignments
 
 [![Assignment_1](https://img.shields.io/badge/Assignment_1-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1)
-[![Assignment_2](https://img.shields.io/badge/Assignment_2-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)
-[![Assignment_3](https://img.shields.io/badge/Assignment_3-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)
-[![Assignment_4](https://img.shields.io/badge/Assignment_4-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
+[![Assignment_2](https://img.shields.io/badge/Assignment_2-Yellow?style=for-the-badge&logoColor=black)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)
+[![Assignment_3](https://img.shields.io/badge/Assignment_3-Green?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)
+[![Assignment_4](https://img.shields.io/badge/Assignment_4-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
 
 ### Lab Tasks
 
-[![Lab_Task_1](https://img.shields.io/badge/Lab_Task_1-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1)
-[![Lab_Task_2](https://img.shields.io/badge/Lab_Task_2-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2)
-[![Lab_Task_3](https://img.shields.io/badge/Lab_Task_3-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3)
-[![Lab_Task_4](https://img.shields.io/badge/Lab_Task_4-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
+[![Lab_Task_1](https://img.shields.io/badge/Lab_Task_1-Red?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1)
+[![Lab_Task_2](https://img.shields.io/badge/Lab_Task_2-Purple?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2)
+[![Lab_Task_3](https://img.shields.io/badge/Lab_Task_3-Pink?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3)
+[![Lab_Task_4](https://img.shields.io/badge/Lab_Task_4-Teal?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
 
 ### Exams
 
-[![Mid_Lab](https://img.shields.io/badge/Mid_Lab-Green?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab)
-[![Net_Final_Lab](https://img.shields.io/badge/Net_Final_Lab-Green?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
+[![Mid_Lab](https://img.shields.io/badge/Mid_Lab-OrangeRed?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab)
+[![Net_Final_Lab](https://img.shields.io/badge/Net_Final_Lab-DarkOrange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
 
 ### Practice
 
 [![Practice](https://img.shields.io/badge/Practice-Yellow?style=for-the-badge&logoColor=black)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Practice)
+
 
 
 ### Assignments
