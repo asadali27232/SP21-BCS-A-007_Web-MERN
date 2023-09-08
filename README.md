@@ -1,4 +1,4 @@
-![Banner Image](banner.jpg)
+![Banner Image](banner.jpeg)
 
 # SP21-BCS-A-007_Web-MERN
 
