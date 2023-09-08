@@ -30,7 +30,6 @@ Here's a quick overview of the repository's structure:
 [![Practice](https://img.shields.io/badge/Practice-Yellow?style=for-the-badge&logoColor=black)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Practice)
 
 
-
 ### Assignments
 • [Assignment_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1) • [Assignment_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2) • [Assignment_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3) • [Assignment_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
 
