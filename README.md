@@ -8,20 +8,19 @@ Here's a quick overview of the repository's structure:
 
 ### Assignments
 
-- 📝 [Assignment_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1) • 📝 [Assignment_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2) • 📝 [Assignment_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3) • 📝 [Assignment_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
+• [Assignment_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1) • [Assignment_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2) • [Assignment_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3) • [Assignment_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
 
 ### Lab Tasks
 
-- 🔬 [Lab_Task_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1) • 🔬 [Lab_Task_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2) • 🔬 [Lab_Task_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3) • 🔬 [Lab_Task_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
+• [Lab_Task_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1) • [Lab_Task_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2) • [Lab_Task_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3) • [Lab_Task_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
 
 ### Exams
 
-- 📚 [Mid_Lab](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab) • 📚 [Net_Final_Lab](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
+• [Mid_Lab](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab) • [Net_Final_Lab](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
 
 ### Practice
 
-- 💡 [Practice](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Practice)
-
+• [Practice](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Practice)
 
 ## About
 
