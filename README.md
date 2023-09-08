@@ -35,22 +35,9 @@ This repository is created to support the Web Technologies course. It aims to pr
 ![MongoDB](https://img.shields.io/badge/-MongoDB-green)
 ![Redux](https://img.shields.io/badge/-Redux-purple)
 
-## Technologies Used
-
-<span style="background-color:#E34F26; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">HTML</span>
-<span style="background-color:#2965f1; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">CSS</span>
-<span style="background-color:#7952B3; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">Bootstrap</span>
-<span style="background-color:#F7DF1E; color:black; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">JavaScript</span>
-<span style="background-color:#61DAFB; color:black; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">React</span>
-<span style="background-color:#68A063; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">Node.js</span>
-<span style="background-color:#000000; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">Express</span>
-<span style="background-color:#47A248; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">MongoDB</span>
-<span style="background-color:#764ABC; color:white; padding: 5px 10px; margin-right: 5px; border-radius: 5px;">Redux</span>
-
-
 ## Live Demo
 
-You can view a live demo of the application on the GitHub pages site for this repository: https://asadali27232.github.io/Web_Dev_MERN/
+You can view a live demo of the application on the GitHub pages site for this repository: https://asadali27232.github.io/SP21-BCS-A-007_Web-MERN/
 
 ## Getting Started
 
@@ -73,7 +60,9 @@ Please follow standard GitHub contribution practices if you'd like to contribute
 
 ## About Me
 
-I am Asad Ali, a Computer Science student at [COMSATS University Lahore](https://lahore.comsats.edu.pk/default.aspx). I'm passionate about web app development and always looking for ways to improve my skills. You can connect with me on [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923074315952)
+I am Asad Ali, a Computer Science student at [COMSATS University Lahore](https://lahore.comsats.edu.pk/default.aspx). I'm passionate about web app development and always looking for ways to improve my skills.
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923074315952)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asadali27232@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asadali27232/)
 
