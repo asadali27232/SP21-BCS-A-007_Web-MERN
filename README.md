@@ -8,10 +8,10 @@ Here's a quick overview of the repository's structure:
 
 ### Assignments
 
-[![Assignment_1](https://img.shields.io/badge/Assignment_1-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1)
-[![Assignment_2](https://img.shields.io/badge/Assignment_2-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)
-[![Assignment_3](https://img.shields.io/badge/Assignment_3-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)
-[![Assignment_4](https://img.shields.io/badge/Assignment_4-Orange?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
+[![Assignment_1](https://img.shields.io/badge/Assignment_1-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1)
+[![Assignment_2](https://img.shields.io/badge/Assignment_2-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)
+[![Assignment_3](https://img.shields.io/badge/Assignment_3-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)
+[![Assignment_4](https://img.shields.io/badge/Assignment_4-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
 
 ### Lab Tasks
 
