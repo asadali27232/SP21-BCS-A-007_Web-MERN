@@ -7,11 +7,10 @@ Welcome to the SP21-BCS-A-007_Web-MERN repository! This repository is dedicated 
 Here's a quick overview of the repository's structure:
 
 ### Assignments
-
-- **Assignment_1**: Contains materials related to Assignment 1.
-- **Assignment_2**: Contains materials related to Assignment 2.
-- **Assignment_3**: Contains materials related to Assignment 3.
-- **Assignment_4**: Contains materials related to Assignment 4.
+- **[Assignment_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1)**
+- **[Assignment_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)**
+- **[Assignment_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)**
+- **[Assignment_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)**
 
 ### Lab Tasks
 
