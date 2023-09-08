@@ -7,6 +7,7 @@ Welcome to the SP21-BCS-A-007_Web-MERN repository! This repository is dedicated 
 Here's a quick overview of the repository's structure:
 
 ### Assignments
+
 - **[Assignment_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1)**
 - **[Assignment_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)**
 - **[Assignment_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)**
@@ -14,15 +15,16 @@ Here's a quick overview of the repository's structure:
 
 ### Lab Tasks
 
-- **Lab_Task_1**: Contains materials related to Lab Task 1.
-- **Lab_Task_2**: Contains materials related to Lab Task 2.
-- **Lab_Task_3**: Contains materials related to Lab Task 3.
-- **Lab_Task_4**: Contains materials related to Lab Task 4.
-- 
+- **[Lab_Task_1](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1)**
+- **[Lab_Task_2](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2)**
+- **[Lab_Task_3](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3)**
+- **[Lab_Task_4](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)**
+
 ### Exams
-- **Mid_Lab**: Contains materials related to Midterm Lab tasks.
-- **Net_Final_Lab**: Contains materials related to the Final Lab.
-- 
+
+- **[Mid_Lab](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab)**
+- **[Net_Final_Lab](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)**
+
 ### Practice
 
 - **Practice**: Contains practice materials.
