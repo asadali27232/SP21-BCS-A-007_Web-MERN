@@ -77,4 +77,4 @@ I am Asad Ali, a Computer Science student at [COMSATS University Lahore](https:/
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asadali27232/)
 
 
-Thank you for being a part of the SP21-BCS-A-007_Web-MERN community. Happy learning! 🚀
+Thank you for visiting the SP21-BCS-A-007_Web-MERN Repository. Happy learning!
