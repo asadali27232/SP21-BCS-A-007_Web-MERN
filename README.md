@@ -73,7 +73,9 @@ Please follow standard GitHub contribution practices if you'd like to contribute
 
 ## About Me
 
-I am Asad Ali, a Computer Science student at [COMSATS University Lahore](https://lahore.comsats.edu.pk/default.aspx). I'm passionate about web app development and always looking for ways to improve my skills. You can connect with me on [WhatsApp](https://wa.me/923074315952) or [Email](mailto:asadali27232@gmail.com).
+I am Asad Ali, a Computer Science student at [COMSATS University Lahore](https://lahore.comsats.edu.pk/default.aspx). I'm passionate about web app development and always looking for ways to improve my skills. You can connect with me on [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923074315952)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asadali27232@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asadali27232/)
 
 
 Thank you for being a part of the SP21-BCS-A-007_Web-MERN community. Happy learning! 🚀
