@@ -1,0 +1,82 @@
+![Banner Image](Banner.png)
+
+# SP21-BCS-A-007_Web-MERN
+
+Welcome to the SP21-BCS-A-007_Web-MERN repository! This repository is dedicated to the Web Technologies course and serves as a central hub for all course materials, including lecture demonstrations, code samples, labs, quizzes, assignments, and exams.
+
+## Repository Structure
+
+Here's a quick overview of the repository's structure:
+
+### Assignments
+
+[![Assignment_1](https://img.shields.io/badge/Assignment_1-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_1)
+[![Assignment_2](https://img.shields.io/badge/Assignment_2-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_2)
+[![Assignment_3](https://img.shields.io/badge/Assignment_3-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_3)
+[![Assignment_4](https://img.shields.io/badge/Assignment_4-FFA500?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Assignment_4)
+
+### Lab Tasks
+
+[![Lab_Task_1](https://img.shields.io/badge/Lab_Task_1-0074E4?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1)
+[![Lab_Task_2](https://img.shields.io/badge/Lab_Task_2-0074E4?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2)
+[![Lab_Task_3](https://img.shields.io/badge/Lab_Task_3-0074E4?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3)
+[![Lab_Task_4](https://img.shields.io/badge/Lab_Task_4-0074E4?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
+
+### Exams
+
+[![Mid_Lab](https://img.shields.io/badge/Mid_Lab-FF5733?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Mid_Lab)
+[![Net_Final_Lab](https://img.shields.io/badge/Final_Lab-FF5733?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Net_Final_Lab)
+
+### Practice
+
+[![Practice](https://img.shields.io/badge/Practice-Yellow?style=for-the-badge&logoColor=black)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Practice)
+
+## About
+
+This repository is created to support the Web Technologies course. It aims to provide a centralized location for all relevant resources. Whether you're a student looking for course materials or an instructor managing the course content, this repository is designed to make your life easier.
+
+## Technologies Used
+
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-2965f1?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-68A063?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+
+## Live Demo
+
+You can explore a live demonstration of this repository on its GitHub Pages site:
+
+
+[![Visit Website](https://img.shields.io/badge/VISIT%20WEBSITE-FFD700?style=for-the-badge&logoColor=white)](https://asadali27232.github.io/SP21-BCS-A-007_Web-MERN/)
+
+## Getting Started
+
+To get started with this project, you'll need to clone the repository to your local machine. Open your terminal and run the following command:
+```sh
+git clone https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN.git
+```
+To run the application locally, you'll need to have Node.js and MongoDB installed on your machine. Once you've cloned the repository, navigate to the project directory and install the dependencies by running:
+```sh
+npm install
+```
+Next, start the server by running.
+
+## Contributing
+
+Please follow standard GitHub contribution practices if you'd like to contribute to this repository by adding course materials or improvements. Fork the repository, make your changes, and submit a pull request. Your contributions are highly appreciated!
+
+## About Me
+
+I am Asad Ali, a Computer Science student at [COMSATS University Lahore](https://lahore.comsats.edu.pk/default.aspx). I'm passionate about web app development and always looking for ways to improve my skills.
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923074315952)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asadali27232@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asadali27232/)
+
+
+Thank you for visiting the SP21-BCS-A-007_Web-MERN Repository. Happy learning!
