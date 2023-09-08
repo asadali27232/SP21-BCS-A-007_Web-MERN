@@ -15,10 +15,10 @@ Here's a quick overview of the repository's structure:
 
 ### Lab Tasks
 
-[![Lab_Task_1](https://img.shields.io/badge/Lab_Task_1-Red?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1)
-[![Lab_Task_2](https://img.shields.io/badge/Lab_Task_2-Purple?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2)
-[![Lab_Task_3](https://img.shields.io/badge/Lab_Task_3-Pink?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3)
-[![Lab_Task_4](https://img.shields.io/badge/Lab_Task_4-Teal?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
+[![Lab_Task_1](https://img.shields.io/badge/Lab_Task_1-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_1)
+[![Lab_Task_2](https://img.shields.io/badge/Lab_Task_2-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_2)
+[![Lab_Task_3](https://img.shields.io/badge/Lab_Task_3-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_3)
+[![Lab_Task_4](https://img.shields.io/badge/Lab_Task_4-Blue?style=for-the-badge&logoColor=white)](https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN/tree/main/Lab_Task_4)
 
 ### Exams
 
