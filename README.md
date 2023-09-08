@@ -48,7 +48,9 @@ This repository is created to support the Web Technologies course. It aims to pr
 ## Live Demo
 
 You can explore a live demonstration of this repository on its GitHub Pages site:
-[![Visit Website](https://img.shields.io/badge/Website-FFD700?style=for-the-badge&logoColor=white)](https://asadali27232.github.io/SP21-BCS-A-007_Web-MERN/)
+
+
+[![Visit Website](https://img.shields.io/badge/VISIT%02WEBSITE-FFD700?style=for-the-badge&logoColor=white)](https://asadali27232.github.io/SP21-BCS-A-007_Web-MERN/)
 
 ## Getting Started
 
