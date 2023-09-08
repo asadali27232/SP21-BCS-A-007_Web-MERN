@@ -54,18 +54,17 @@ You can explore a live demonstration of this repository on its GitHub Pages site
 
 ## Getting Started
 
+### Clone the Repository
+
+To get started with this project, you'll need to clone the repository to your local machine. Open your terminal and run the following command:
+```sh
+git clone https://github.com/asadali27232/SP21-BCS-A-007_Web-MERN.git
+```
 To run the application locally, you'll need to have Node.js and MongoDB installed on your machine. Once you've cloned the repository, navigate to the project directory and install the dependencies by running:
 ```sh
 npm install
 ```
-Next, start the server by running:
-```sh
-npm run server
-```
-Then, start the React development server by running:
-```sh
-npm run start
-```
+Next, start the server by running.
 
 ## Contributing
 
