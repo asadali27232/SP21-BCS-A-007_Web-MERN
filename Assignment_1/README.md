@@ -1,2 +1,5 @@
-# SP21-BCS-A-007_Web-MERN
-Repository dedicated to the Web Technologies course . This repository serves as a central hub for my course materials, including lecture demonstrations, code samples, labs, quiz, assignments, and ]Exams
+## Assignment One (CV)
+
+You are required to create your CV in HTML/CSS. Do not use any library/framework. Make your CV using only pure CSS. You are also required to use at least one effect which is not discussed in class. The extra effect can be anything e.g. a fancy border, a progress slider, etc.
+
+**Deadline:  18-9-2023**
