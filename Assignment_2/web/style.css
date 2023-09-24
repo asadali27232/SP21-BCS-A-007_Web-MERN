@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+}
+
+/***************************************************/
+/*               Home Page Style                   */
+/***************************************************/
+
+.main {
+  overflow: hidden;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.banner_bg {
+  position: relative;
+  height: 120vh;
+}
+
+.banner_bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/banner2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: zoomInOut 30s infinite alternate;
+  z-index: -1;
+  /* Place the pseudo-element behind the content */
+}
+
+.cont {
+  position: relative;
+  z-index: 1;
+  height: 80vh;
+}
+
+.cont .header {
+  color: #fff;
+  font-size: 16px;
+  min-height: 70px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.header li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.header li a:hover {
+  color: #beceb5;
+}
+
+.header li a img {
+  height: 25px;
+}
+
+nav {
+  min-height: 70px;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .logo img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav li a:hover {
+  color: #beceb5;
+}
+
+.nav_line {
+  content: '';
+  width: 100%;
+  height: 0.09px;
+  background-color: #5a714e;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+}
+.banner_text {
+  color: #fff;
+  height: inherit;
+}
+
+@media screen and (min-width: 1080px) {
+  .banner_text .apple {
+    font-size: 120px;
+  }
+}
+
+.banner_text .apple {
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner_text .diseases {
+  color: #beceb5;
+}
+
+.banner_text .banner_text_width {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.banner_text_line {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: #5a714e;
+}
+
+.banner_text .tagline {
+  color: #beceb5;
+  font-size: 16px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+.sec1 {
+  position: relative;
+  top: -90px;
+}
+
+.sec1 .content {
+  height: 360px;
+  width: 100%;
+  color: #fff;
+  background-color: #5a714e62;
+  padding: 20px;
+}
+
+.sec1 .img1 {
+  width: 100%;
+  background-image: url('./images/edited_apple1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec1 .img2 {
+  width: 100%;
+  background-image: url('./images/edited_apple2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec1 .img3 {
+  width: 100%;
+  background-image: url('./images/edited_apple3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec1 .content_text {
+  opacity: 0; /* Start with opacity set to 0 (hidden) */
+  color: #fff;
+  transform: translateY(80%);
+  transition: opacity 1s ease, transform 1s ease; /* Add transitions for opacity and transform */
+}
+
+.sec1 .content:hover {
+  background-color: #5a714ed7;
+  transition: background-color 0.5s ease;
+}
+
+.sec1 .content:hover .content_text {
+  opacity: 1; /* Change opacity to 1 (visible) on hover */
+  transform: translateY(40%);
+  transition: opacity 1s ease, transform 1s ease; /* Add transitions for opacity and transform */
+}
+
+.sec2 h3 span {
+  color: #6eaf4b;
+}
+
+.sec2 {
+  background-image: url('./images/hp1-service-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.horizontal-divider {
+  margin-left: 20%;
+  width: 60%;
+  height: 150px; /* Adjust the height as needed */
+  position: relative;
+}
+
+.horizontal-divider .center-circle {
+  width: 14px;
+  height: 14px;
+  border: 0.1px solid #00000016;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.horizontal-divider .outer-circle {
+  width: 25px;
+  height: 25px;
+  border: 0.1px solid #00000016;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.horizontal-divider .line {
+  width: 100%;
+  height: 0.1px; /* Adjust the height as needed */
+  background-color: #00000016;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: -1;
+}
+
+.sec3 img {
+  width: 30%;
+}
+
+.sec3 h4 {
+  font-weight: bold;
+  margin: 15px 0px;
+  margin-top: 30px;
+}
+
+.sec3 p {
+  font-size: 14px;
+  margin: 15px 0px;
+  color: #818181;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.sec3 a {
+  text-decoration: none;
+  color: #6eaf4b;
+  font-weight: bold;
+  margin: 15px 0px;
+  font-size: 14px;
+}
+
+.sec3 a img {
+  width: 20px;
+}
+
+.sec4 {
+  margin-top: 80px;
+}
+
+.sec4 .img-l {
+  background-image: url('./images/Marijuana-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.sec4 .img-r {
+  background-image: url('./images/Marijuana2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec4 .p1 {
+  font-weight: 600;
+  color: #fff;
+}
+
+.sec4 .p2 {
+  color: #c3ddb6;
+  font-size: 25px;
+}
+
+.sec4 .p3 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.sec4 button {
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0px;
+  margin-top: 20px;
+  color: #5a714e;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sec4 button img {
+  width: 15%;
+}
+
+.sec5 .product_container {
+  padding-top: 30vh;
+}
+
+.products_bg {
+  background-image: url('./images/medical-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 160vh;
+  position: relative;
+  top: -20vh;
+  z-index: -1;
+}
