@@ -91,3 +91,6 @@ nav ul li:hover {
   height: 2px;
   background-color: #5c5f6c;
 }
+.col img {
+  width: 100%;
+}
