@@ -10,28 +10,43 @@ router.get('/login', function (req, res) {
 });
 
 router.post('/login', loginFormValidator, async function (req, res) {
-    let user = await User.findOne({ email: req.body.email });
-    let valid = await bcrypt.compare(req.body.password, user.password);
+    try {
+        let user = await User.findOne({ email: req.body.email });
 
-    if (!user) {
-        req.session.flash = { type: 'danger', message: 'No User Found' };
-        return res.redirect('/register');
-    } else if (!valid) {
-        req.session.flash = { type: 'danger', message: 'Unable to Login' };
-        return res.redirect('/login');
+        if (!user) {
+            req.session.flash = { type: 'danger', message: 'No User Found' };
+            return res.status(500).send({
+                error: 'User not found!',
+            });
+        }
+
+        let valid = await bcrypt.compare(req.body.password, user.password);
+
+        if (!valid) {
+            req.session.flash = { type: 'danger', message: 'Unable to Login' };
+            return res.status(500).send({
+                error: 'Wrong password!',
+            });
+        }
+
+        req.session.user = user;
+        req.session.flash = {
+            type: 'success',
+            message: 'Logged In Successfully',
+        };
+
+        return res.send({
+            message: `Login successful!\nName: ${user.name}\nRole: ${user.role}`,
+        });
+    } catch (err) {
+        req.session.flash = {
+            type: 'danger',
+            message: 'Internal Server Error',
+        };
+        return res.status(500).send({
+            error: 'Authentication failed!',
+        });
     }
-
-    req.session.user = user;
-    req.session.flash = {
-        type: 'success',
-        message: 'Logged In Successfully',
-    };
-
-    console.log(req.session.user);
-
-    res.send({
-        message: `Login successful! Email: ${req.body.email} Password: ${req.body.password}`,
-    });
 });
 
 router.get('/register', function (req, res) {
@@ -47,14 +62,13 @@ router.post('/register', registerFormValidator, async function (req, res) {
     await user
         .save()
         .then(() => {
-            res.send({
-                message: `Registration successful!\nName: ${req.body.name}\nEmail: ${req.body.email}\nPassword: ${req.body.password}\nRole: ${req.body.role}`,
+            return res.send({
+                message: `Registration successful!\nName: ${req.body.name}\nEmail: ${req.body.email}\nRole: ${req.body.role}\nPassword: ${req.body.password}`,
             });
-            res.redirect('/login');
         })
         .catch((err) => {
-            res.send({
-                message: `Registration failed!\n${err.message}`,
+            return res.status(500).send({
+                error: 'Registration failed!',
             });
         });
 });

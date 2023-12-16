@@ -32,9 +32,10 @@ function login() {
         data: JSON.stringify(formData),
         success: function (data) {
             alert(data.message);
+            window.location.href = '/home';
         },
         error: function (error) {
-            alert(error);
+            alert(error.responseJSON.error);
         },
     });
 }

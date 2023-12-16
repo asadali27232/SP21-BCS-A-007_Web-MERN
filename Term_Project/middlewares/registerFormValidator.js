@@ -56,7 +56,9 @@ function registerFormValidator(req, res, next) {
 
     if (validationResult.error) {
         // Handle validation errors
-        res.json({ message: validationResult.error.message });
+        return res
+            .status(500)
+            .send({ message: validationResult.error.message });
     } else {
         // User input is valid
         next();

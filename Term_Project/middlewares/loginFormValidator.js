@@ -33,7 +33,7 @@ function loginFormValidator(req, res, next) {
 
     if (validationResult.error) {
         // Handle validation errors
-        res.json({ message: validationResult.error.message });
+        return res.status(500).send({ error: validationResult.error.message });
     } else {
         // User input is valid
         next();

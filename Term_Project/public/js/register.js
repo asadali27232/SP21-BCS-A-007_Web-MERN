@@ -1,3 +1,5 @@
+const e = require('express');
+
 function register() {
     // Get form data
     const email = $('#email').val();
@@ -25,9 +27,10 @@ function register() {
             data: JSON.stringify(formData),
             success: function (data) {
                 alert(data.message);
+                window.location.href = '/login';
             },
             error: function (error) {
-                alert(error);
+                alert(error.responseJSON.error);
             },
         });
     }

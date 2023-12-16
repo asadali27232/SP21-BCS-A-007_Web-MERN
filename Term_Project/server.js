@@ -39,6 +39,11 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
+app.get('/home', function (req, res) {
+    console.log(req.session.user);
+    res.render('home');
+});
+
 app.use('/', require('./routes/admin'));
 app.use('/', require('./routes/auth'));
 
