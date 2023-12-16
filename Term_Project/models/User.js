@@ -1,11 +1,25 @@
 let mongoose = require('mongoose');
 
-let modelSchema = mongoose.Schema(
+const modelSchema = mongoose.Schema(
     {
-        name: String,
-        email: { type: String, unique: true, index: true },
-        password: String,
-        role: String,
+        name: {
+            type: String,
+            required: true,
+        },
+        email: {
+            type: String,
+            unique: true,
+            index: true,
+            required: true,
+        },
+        role: {
+            type: String,
+            required: true,
+        },
+        password: {
+            type: String,
+            required: true,
+        },
     },
     { timestamps: true }
 );

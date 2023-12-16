@@ -33,8 +33,8 @@ function login() {
         success: function (data) {
             alert(data.message);
         },
-        error: function () {
-            alert('Error in sending request to server!');
+        error: function (error) {
+            alert(error);
         },
     });
 }

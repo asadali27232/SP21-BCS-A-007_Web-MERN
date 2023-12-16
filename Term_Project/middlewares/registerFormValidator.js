@@ -1,6 +1,16 @@
 const Joi = require('joi');
 
-function registerFromValidator(req, res, next) {
+function registerFormValidator(req, res, next) {
+    const nameSchema = Joi.string()
+        .min(3)
+        .max(50)
+        .pattern(/^[A-Za-z\s]+$/)
+        .error(
+            new Error(
+                'Name must be between 3 and 50 characters, and contain only letters and spaces!'
+            )
+        );
+
     const emailSchema = Joi.string()
         .email({
             minDomainSegments: 2,
@@ -8,6 +18,11 @@ function registerFromValidator(req, res, next) {
         })
         .required()
         .error(new Error('Please enter a valid email address!'));
+
+    const roleSchema = Joi.string()
+        .valid('manager', 'cashier') // Add more valid roles as needed
+        .required()
+        .error(new Error('Please select a valid role!'));
 
     const passwordSchema = Joi.string()
         .min(8)
@@ -17,19 +32,23 @@ function registerFromValidator(req, res, next) {
         )
         .error(
             new Error(
-                'Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number and one special character!'
+                'Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character!'
             )
         );
 
     const schema = Joi.object({
         email: emailSchema,
         password: passwordSchema,
+        name: nameSchema,
+        role: roleSchema,
     });
 
-    const { email, password } = req.body;
+    const { email, password, name, role } = req.body;
 
     const user = {
+        name,
         email,
+        role,
         password,
     };
 
@@ -44,4 +63,4 @@ function registerFromValidator(req, res, next) {
     }
 }
 
-module.exports = registerFromValidator;
+module.exports = registerFormValidator;
