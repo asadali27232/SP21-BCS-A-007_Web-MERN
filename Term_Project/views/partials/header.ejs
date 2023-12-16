@@ -5,6 +5,30 @@
     <nav>
         <a href="/">Home</a>
         <a href="/products">Products</a>
+        <% if (req.session.user) { %>
+        <!-- If user is logged in, show logout link -->
+        <a href="#" onclick="logout()">Logout</a>
+        <% } else { %>
+        <!-- If user is not logged in, show login link -->
         <a href="/login">Login</a>
+        <% } %>
     </nav>
 </header>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function logout() {
+        $.ajax({
+            url: '/logout',
+            type: 'POST',
+            success: function (data) {
+                alert(data.message);
+                window.location.href = '/login';
+            },
+            error: function (error) {
+                alert('Error in logging out!'); // Handle the error
+            },
+        });
+        return false; // Prevent the default link behavior
+    }
+</script>

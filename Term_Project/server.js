@@ -36,12 +36,12 @@ app.use(
 
 app.get('/', function (req, res) {
     console.log(req.session.user);
-    res.render('home');
+    res.render('home', { req: req });
 });
 
 app.get('/home', function (req, res) {
     console.log(req.session.user);
-    res.render('home');
+    res.render('home', { req: req });
 });
 
 app.use('/', require('./routes/admin'));

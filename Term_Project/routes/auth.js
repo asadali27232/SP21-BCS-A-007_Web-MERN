@@ -6,7 +6,7 @@ const User = require('../models/user');
 const bcrypt = require('bcryptjs');
 
 router.get('/login', function (req, res) {
-    res.render('login');
+    res.render('login', { req: req });
 });
 
 router.post('/login', loginFormValidator, async function (req, res) {
@@ -50,7 +50,7 @@ router.post('/login', loginFormValidator, async function (req, res) {
 });
 
 router.get('/register', function (req, res) {
-    res.render('register');
+    res.render('register', { req: req });
 });
 
 router.post('/register', registerFormValidator, async function (req, res) {
@@ -68,9 +68,19 @@ router.post('/register', registerFormValidator, async function (req, res) {
         })
         .catch((err) => {
             return res.status(500).send({
-                error: 'Registration failed!',
+                error: 'Email already exists!',
             });
         });
+});
+
+router.post('/logout', async function (req, res) {
+    req.session.destroy((err) => {
+        if (err) {
+            console.error('Session destruction error:', err);
+            return res.status(500).send({ error: 'Unable to log out!' });
+        }
+        return res.send({ message: 'Logged out successfully!' });
+    });
 });
 
 module.exports = router;
