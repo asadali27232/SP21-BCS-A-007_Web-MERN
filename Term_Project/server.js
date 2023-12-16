@@ -1,6 +1,20 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
+
+// Connect to MongoDB
+mongoose
+    .connect('mongodb://localhost:27017/cakes-and-bakes', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => {
+        console.log('Connected to MongoDB');
+    })
+    .catch((err) => {
+        console.log('Error connecting to MongoDB', err.message);
+    });
 
 app.use(express.static('public'));
 
@@ -14,13 +28,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/products', function (req, res) {
-    res.render('products');
-});
-
-app.get('/login', function (req, res) {
-    res.render('login');
-});
+app.use('/', require('./routes/admin'));
+app.use('/', require('./routes/auth'));
 
 app.listen(3000, () => {
     console.log('Server listening on port 3000');
