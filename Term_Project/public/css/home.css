@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-_header {
-    background-color: red;
-}
 body {
     font-family: Helvetica, sans-serif;
     color: white;
@@ -143,7 +140,7 @@ p {
 }
 .prd {
     width: 98%;
-    height: fit-content;
+    height: auto;
     padding: 15px 10px 0px 10px;
     margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -168,7 +165,7 @@ p {
 .adding-prd {
     display: none;
     width: 97.5%;
-    height: fit-content;
+    height: auto;
     padding: 15px;
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -220,7 +217,7 @@ p {
     border: 1px solid rgba(32, 178, 170, 0.8);
 }
 .qty {
-    width: fit-content;
+    width: auto;
     padding: 1px 5px;
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
@@ -273,7 +270,7 @@ p {
     padding: 0;
     margin: 0;
     color: whitesmoke;
-    width: fit-content;
+    width: auto;
 }
 .smaller {
     font-size: 10px;
@@ -320,7 +317,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: fit-content;
+    height: auto;
     padding: 10px 0px;
     margin: 0px;
     align-items: center;
