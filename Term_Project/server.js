@@ -1,17 +1,27 @@
 const express = require('express');
-const server = express();
-const expressLayouts = require('express-ejs-layouts');
+const path = require('path');
+const app = express();
 
-server.use(express.static('public'));
+app.use(express.static('public'));
 
-server.set('view engine', 'ejs');
-server.use(express.json());
-server.use(express.urlencoded());
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
-server.get('/', function (req, res) {
-  res.render('home');
+app.use(express.json());
+app.use(express.urlencoded());
+
+app.get('/', function (req, res) {
+    res.render('home');
 });
 
-server.listen(3000, () => {
-  console.log('Server listening on port 3000');
+app.get('/products', function (req, res) {
+    res.render('products');
+});
+
+app.get('/admin', function (req, res) {
+    res.render('admin');
+});
+
+app.listen(3000, () => {
+    console.log('Server listening on port 3000');
 });
