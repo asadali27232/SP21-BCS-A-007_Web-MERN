@@ -12,13 +12,19 @@
             crossorigin="anonymous" />
         <link rel="stylesheet" href="/css/dashboard.css" />
         <link rel="stylesheet" href="/css/header.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
         <div class="container-fluid pt-0">
             <%- include('./partials/header', { req: req }) %>
             <div class="row justify-content-center align-content-center">
                 <div class="col-lg-12 m-2 p-3 pt-0">
-                    <h1 class="d-flex justify-content-center">Dashboard</h1>
+                    <div class="top-title"><h4>Dashboard</h4></div>
+                    <div class="dashboard-container">
+                        <div class="chart-container">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,6 +33,6 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/dasboard.js"></script>
+        <script src="js/dashboard.js"></script>
     </body>
 </html>
