@@ -18,7 +18,102 @@
             <%- include('./partials/header', { req: req }) %>
             <div class="row justify-content-center align-content-center">
                 <div class="col-lg-4 m-2 p-3 pt-0">
-                    <div class="top-title"><h4>Order Details</h4></div>
+                    <div class="top-title">
+                        <h4>Order Details</h4>
+                    </div>
+                    <div class="details-box">
+                        <table class="order-table">
+                            <tr>
+                                <td>Invoice Number</td>
+                                <td><%= order.invoice.invoiceNumber %></td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td><%= order.invoice.date %></td>
+                            </tr>
+                            <tr>
+                                <td>Amount</td>
+                                <td><%= order.invoice.amount %></td>
+                            </tr>
+                            <tr>
+                                <td>Discount</td>
+                                <td><%= order.invoice.discount %></td>
+                            </tr>
+                            <tr>
+                                <td>Amount After Discount</td>
+                                <td>
+                                    <%= order.invoice.amountAfterDiscount %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Total GST</td>
+                                <td><%= order.invoice.totalGst %></td>
+                            </tr>
+                            <tr>
+                                <td>Received</td>
+                                <td><%= order.invoice.received %></td>
+                            </tr>
+                            <tr>
+                                <td>Balance</td>
+                                <td><%= order.invoice.balance %></td>
+                            </tr>
+                            <tr>
+                                <td>Total Amount</td>
+                                <td><%= order.invoice.totalAmount %></td>
+                            </tr>
+                            <tr>
+                                <td>Processed By</td>
+                                <td><%= order.user.name %></td>
+                            </tr>
+                            <tr>
+                                <td>User Email</td>
+                                <td><%= order.user.email %></td>
+                            </tr>
+                            <tr>
+                                <td>User Role</td>
+                                <td><%= order.user.role %></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-7 m-2 p-3 pt-0" id="order-line">
+                    <div class="top-title"><h4>Cart Details</h4></div>
+                    <div class="product-container cart-container">
+                        <div class="prd-header cart-header">
+                            <span class="cart-name"><p>NAME</p></span>
+                            <div class="cart-qty"><p>QUANTITY</p></div>
+                            <div class="cart-price"><p>PRICE</p></div>
+                            <div class="cart-gst"><p>GST</p></div>
+                            <div class="cart-gst-amount"><p>GST AMOUNT</p></div>
+                            <div class="cart-total-price">
+                                <p>TOTAL PRICE</p>
+                            </div>
+                        </div>
+                        <div class="prd-box cart-box">
+                            <% order.invoice.products.forEach(product => { %>
+                            <div class="prd cart">
+                                <div class="cart-name">
+                                    <p><%= product.name %></p>
+                                </div>
+                                <div class="cart-qty">
+                                    <p><%= product.qty %></p>
+                                </div>
+                                <div class="cart-price">
+                                    <p><%= 'RS ' + product.rate %></p>
+                                </div>
+                                <div class="cart-gst">
+                                    <p><%= product.gst %></p>
+                                </div>
+                                <div class="cart-gst-amount">
+                                    <p><%= 'RS ' + product.gstAmount %></p>
+                                </div>
+                                <div class="cart-total-price">
+                                    <p><%= 'RS ' + product.totalPrice %></p>
+                                </div>
+                            </div>
+                            <% }); %>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

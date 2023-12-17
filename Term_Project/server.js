@@ -42,9 +42,11 @@ app.use('/', require('./routes/authentication'));
 
 app.use('/', isLogin, require('./routes/user'));
 
-app.use('/', isLogin, isAdmin, require('./routes/admin'));
-
 app.use('/', isLogin, require('./routes/api/saveOrder'));
+
+app.use('/', isLogin, require('./routes/api/addEditProduct'));
+
+app.use('/', isLogin, isAdmin, require('./routes/admin'));
 
 app.listen(3000, () => {
     console.log('Server listening on port 3000');

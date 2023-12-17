@@ -25,4 +25,16 @@ router.get('/orders', async function (req, res) {
     }
 });
 
+router.get('/orderDetails', async function (req, res) {
+    let id = req.query.id;
+    let order = {};
+    try {
+        order = await Order.findById(id);
+        return res.render('orderDetails', { req: req, order: order });
+    } catch (err) {
+        console.log('Error in fetching order from database:', err.message);
+        return;
+    }
+});
+
 module.exports = router;

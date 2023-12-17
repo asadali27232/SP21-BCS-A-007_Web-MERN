@@ -1,3 +1,3 @@
 function showDetails(id) {
-    alert('Order ID: ' + id);
+    window.location.href = '/orderDetails?id=' + id;
 }

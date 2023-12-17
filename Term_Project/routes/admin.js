@@ -3,9 +3,17 @@ let router = express.Router();
 const registerFormValidator = require('../middlewares/registerFormValidator');
 const User = require('../models/user');
 const bcrypt = require('bcryptjs');
+const Product = require('../models/product');
 
-router.get('/products', function (req, res) {
-    res.render('products', { req: req });
+router.get('/products', async function (req, res) {
+    let products = [];
+    try {
+        products = await Product.find({});
+        return res.render('products', { req: req, products: products });
+    } catch (err) {
+        console.log('Error in fetching products from database:', err.message);
+        return;
+    }
 });
 
 router.get('/dashboard', function (req, res) {

@@ -8,7 +8,7 @@ router.post('/saveOrder', async function (req, res) {
         user: req.session.user,
     });
     await order.save();
-    return res.send({ message: 'Order Saved Successfully!' });
+    return;
 });
 
 module.exports = router;
