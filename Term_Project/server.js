@@ -44,6 +44,6 @@ app.use('/', isLogin, require('./routes/user'));
 
 app.use('/', isLogin, isAdmin, require('./routes/admin'));
 
-app.listen(5000, () => {
-    console.log('Server listening on port 5000');
+app.listen(3000, () => {
+    console.log('Server listening on port 3000');
 });

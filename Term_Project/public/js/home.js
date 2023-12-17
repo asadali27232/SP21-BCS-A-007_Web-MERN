@@ -1,5 +1,5 @@
-let prdID = 113;
 let cartCounter = 0;
+
 setInvoiceNumber();
 // Setting Date and Time on Invoice
 setInterval(() => {
@@ -33,47 +33,6 @@ setInterval(() => {
     ).innerText = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()} ${h}:${m}:${s}${ap}`;
 }, 1000);
 
-function addNewProduct(pressedButton) {
-    let newPrdBox = document.getElementById('new-prd-box');
-    let prdBox = document.getElementsByClassName('prd-box')[0];
-
-    if (pressedButton == 'btn-add-product') {
-        document.getElementsByClassName(
-            'new-prd-id'
-        )[0].innerHTML = `<p>New Product ID: PRD${prdID}</p>`;
-        newPrdBox.style.display = 'block';
-        prdBox.style.height = '35.5vh';
-    } else if (pressedButton == 'btn-add-new-prd') {
-        let prdName = document.getElementById('add-prd-name');
-        let prdPrice = document.getElementById('add-prd-price');
-        prdBox.innerHTML += `<div class="prd">
-                <div class="prd-id"><p>PRD${prdID}</p></div>
-                <div class="prd-name"><p>${prdName.value
-                    .toString()
-                    .toUpperCase()}</p></div>
-                <div class="prd-price"><p>RS ${prdPrice.value}</p></div>
-                <div class="prd-buy">
-                  <img
-                    id="${prdID - 101}"
-                    src="images/icons8_fast_cart_60px.png"
-                    alt="BUY"
-                    onclick="addToCart('${prdID - 101}')"
-                  />
-                </div>`;
-        prdID = prdID + 1;
-        newPrdBox.style.display = 'none';
-        prdBox.style.height = '65vh';
-        document.getElementsByClassName('new-prd-id')[0].innerHTML = `<p></p>`;
-        document.getElementById('add-prd-name').value = '';
-        document.getElementById('add-prd-price').value = '';
-    } else if (pressedButton == 'btn-cancel-new-prd') {
-        newPrdBox.style.display = 'none';
-        prdBox.style.height = '65vh';
-        document.getElementById('add-prd-name').value = '';
-        document.getElementById('add-prd-price').value = '';
-    }
-}
-
 function searchProduct() {
     let prdBox = document.getElementsByClassName('prd-box')[0];
     let searchKey = document.getElementById('search-prd');
@@ -92,6 +51,7 @@ function searchProduct() {
         }
     }
 }
+
 function qtyChange(qtyBtn, prdNumber) {
     let cartBoxPrd = document
         .getElementsByClassName('cart-box')[0]
@@ -154,6 +114,7 @@ function addToCart(id) {
     }
     billing();
 }
+
 function matchWithCart(prdName) {
     let cartBox = document.getElementsByClassName('cart-box')[0];
 
@@ -166,6 +127,7 @@ function matchWithCart(prdName) {
     }
     return true;
 }
+
 function removeFromCart(productToBeRemovedFromCart) {
     let cartBoxPrd = document.getElementsByClassName('cart-box')[0];
     cartBoxPrd.removeChild(
@@ -173,10 +135,12 @@ function removeFromCart(productToBeRemovedFromCart) {
     );
     billing();
 }
+
 function emptyCart() {
     document.getElementsByClassName('cart-box')[0].innerHTML = ``;
     billing();
 }
+
 function billing() {
     let cartBox = document.getElementsByClassName('cart-box')[0];
     let billBox = document.getElementsByClassName('bill-box')[0];
@@ -292,6 +256,7 @@ function billing() {
         totalGst
     ).toFixed(2);
 }
+
 function printInvoice() {
     let prtContent = document.getElementsByClassName('invoice-container')[0];
     let WinPrint = window.open(
@@ -398,6 +363,7 @@ function printInvoice() {
     document.getElementById('input-receivable').value = '';
     emptyCart();
 }
+
 function setInvoiceNumber() {
     let d = new Date();
     document.getElementById(

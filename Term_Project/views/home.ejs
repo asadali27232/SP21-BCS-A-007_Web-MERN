@@ -27,47 +27,8 @@
                             id="search-prd"
                             class="input-field"
                             onkeyup="searchProduct()" />
-                        <button
-                            class="btn-add-product"
-                            onclick="addNewProduct('btn-add-product')">
-                            ADD NEW
-                        </button>
                     </div>
                     <div class="product-container">
-                        <div class="adding-prd" id="new-prd-box">
-                            <div class="adding-new-prd-top">
-                                <h4>Adding New Product</h4>
-                            </div>
-                            <div class="new-prd-id"></div>
-                            <div class="new-prd-name">
-                                <input
-                                    type="text"
-                                    id="add-prd-name"
-                                    placeholder="New Product Name" />
-                            </div>
-                            <div class="new-prd-price">
-                                <input
-                                    type="text"
-                                    id="add-prd-price"
-                                    placeholder="New Product Price" />
-                            </div>
-                            <div class="add-prd">
-                                <button
-                                    id="btn-add-new-prd"
-                                    class="btn-add-product"
-                                    onclick="addNewProduct('btn-add-new-prd')">
-                                    ADD
-                                </button>
-                            </div>
-                            <div class="cancel-prd">
-                                <button
-                                    id="btn-cancel-new-prd"
-                                    class="btn-add-product"
-                                    onclick="addNewProduct('btn-cancel-new-prd')">
-                                    CANCEL
-                                </button>
-                            </div>
-                        </div>
                         <div class="prd-header">
                             <div class="prd-id"><p>ID</p></div>
                             <div class="prd-name"><p>NAME</p></div>
@@ -75,161 +36,26 @@
                             <div class="prd-buy"><p>BUY</p></div>
                         </div>
                         <div class="prd-box">
+                            <% products.forEach((product, index) => { %>
                             <div class="prd">
-                                <div class="prd-id"><p>PRD101</p></div>
-                                <div class="prd-name"><p>CAKE 1 POUND</p></div>
-                                <div class="prd-price"><p>RS 700</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="0"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('0')" />
+                                <div class="prd-id">
+                                    <p><%= product.id %></p>
                                 </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD102</p></div>
                                 <div class="prd-name">
-                                    <p>BREAD WHITE SMALL</p>
+                                    <p><%= product.name.toUpperCase() %></p>
                                 </div>
-                                <div class="prd-price"><p>RS 70</p></div>
+                                <div class="prd-price">
+                                    <p><%= `RS ${product.price}` %></p>
+                                </div>
                                 <div class="prd-buy">
                                     <img
-                                        id="1"
+                                        id="<%= index %>"
                                         src="images/icons8_fast_cart_60px.png"
                                         alt="BUY"
-                                        onclick="addToCart('1')" />
+                                        onclick="addToCart('<%= index %>')" />
                                 </div>
                             </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD103</p></div>
-                                <div class="prd-name"><p>EGG</p></div>
-                                <div class="prd-price"><p>RS 25</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="2"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('2')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD104</p></div>
-                                <div class="prd-name">
-                                    <p>OLPERS MILK 1L</p>
-                                </div>
-                                <div class="prd-price"><p>RS 180</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="3"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('3')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD105</p></div>
-                                <div class="prd-name">
-                                    <p>MILKPACK MILK 1L</p>
-                                </div>
-                                <div class="prd-price"><p>RS 210</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="4"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('4')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD106</p></div>
-                                <div class="prd-name">
-                                    <p>BROWNY PASTRY</p>
-                                    <p></p>
-                                </div>
-                                <div class="prd-price"><p>RS 90</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="5"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('5')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD107</p></div>
-                                <div class="prd-name"><p>PIZZA S</p></div>
-                                <div class="prd-price"><p>RS 450</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="6"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('6')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD108</p></div>
-                                <div class="prd-name"><p>PIZZA M</p></div>
-                                <div class="prd-price"><p>RS 750</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="7"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('7')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD109</p></div>
-                                <div class="prd-name"><p>PIZZA L</p></div>
-                                <div class="prd-price"><p>RS 1100</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="8"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('8')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD110</p></div>
-                                <div class="prd-name"><p>PIZZA XL</p></div>
-                                <div class="prd-price"><p>RS 1600</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="9"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('9')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD111</p></div>
-                                <div class="prd-name">
-                                    <p>SPECIAL CAKE 1P</p>
-                                </div>
-                                <div class="prd-price"><p>RS 800</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="10"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('10')" />
-                                </div>
-                            </div>
-                            <div class="prd">
-                                <div class="prd-id"><p>PRD112</p></div>
-                                <div class="prd-name"><p>CAKE 2P</p></div>
-                                <div class="prd-price"><p>RS 1200</p></div>
-                                <div class="prd-buy">
-                                    <img
-                                        id="11"
-                                        src="images/icons8_fast_cart_60px.png"
-                                        alt="BUY"
-                                        onclick="addToCart('11')" />
-                                </div>
-                            </div>
+                            <% }); %>
                         </div>
                     </div>
                 </div>
@@ -253,7 +79,13 @@
                     </button>
                 </div>
                 <div class="col-lg-3 m-2 p-3 pt-0" id="bill-sec">
-                    <div class="top-title"><h4>Billing</h4></div>
+                    <div class="top-title">
+                        <h4>
+                            <% if (req.session.user) { %> <%=
+                            req.session.user.role %> <%= req.session.user.name
+                            %> <% } %>
+                        </h4>
+                    </div>
                     <div class="invoice-box">
                         <div class="invoice-container" id="print">
                             <div class="logo-container">
