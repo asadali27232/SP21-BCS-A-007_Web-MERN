@@ -1,5 +1,6 @@
 const express = require('express');
 const Product = require('../models/product');
+const Order = require('../models/order');
 let router = express.Router();
 
 router.get('/home', async function (req, res) {
@@ -9,17 +10,19 @@ router.get('/home', async function (req, res) {
         return res.render('home', { req: req, products: products });
     } catch (err) {
         console.log('Error in fetching products from database:', err.message);
-        return res.render('home', {
-            req: req,
-            products: [
-                { id: 'Error', name: 'Error from Database', price: 404 },
-            ],
-        });
+        return;
     }
 });
 
-router.get('/orders', function (req, res) {
-    res.render('orders', { req: req });
+router.get('/orders', async function (req, res) {
+    let orders = [];
+    try {
+        orders = await Order.find({});
+        return res.render('orders', { req: req, orders: orders });
+    } catch (err) {
+        console.log('Error in fetching orders from database:', err.message);
+        return;
+    }
 });
 
 module.exports = router;

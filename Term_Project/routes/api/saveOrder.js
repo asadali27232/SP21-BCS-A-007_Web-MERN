@@ -11,9 +11,4 @@ router.post('/saveOrder', async function (req, res) {
     return res.send({ message: 'Order Saved Successfully!' });
 });
 
-router.get('/getOrders', async function (req, res) {
-    let orders = await Order.find({ 'user._id': req.session.user._id });
-    return res.send(orders);
-});
-
 module.exports = router;

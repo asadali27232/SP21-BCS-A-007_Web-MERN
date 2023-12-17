@@ -18,7 +18,81 @@
             <%- include('./partials/header', { req: req }) %>
             <div class="row justify-content-center align-content-center">
                 <div class="col-lg-12 m-2 p-3 pt-0">
-                    <h1 class="d-flex justify-content-center">Orders</h1>
+                    <div class="top-title"><h4>Orders</h4></div>
+                    <div class="order-container">
+                        <div class="ord-header">
+                            <div class="invoice-number">
+                                <p>INVOICE #</p>
+                            </div>
+                            <div class="date">
+                                <p>DATE</p>
+                            </div>
+                            <div class="amount">
+                                <p>AMOUNT</p>
+                            </div>
+                            <div class="discount">
+                                <p>DISCOUNT</p>
+                            </div>
+                            <div class="total-gst">
+                                <p>TOTAL GST</p>
+                            </div>
+                            <div class="received">
+                                <p>RECEIVED</p>
+                            </div>
+                            <div class="balance">
+                                <p>BALANCE</p>
+                            </div>
+                            <div class="total-amount">
+                                <p>TOTAL AMOUNT</p>
+                            </div>
+                            <div class="processed-by">
+                                <p>PROCESSED BY</p>
+                            </div>
+                            <div class="processed-by">
+                                <p>DETAILS</p>
+                            </div>
+                        </div>
+                        <div class="ord-box">
+                            <% orders.forEach((order, index) => { %>
+                            <div class="ord">
+                                <div class="invoice-number">
+                                    <p><%= order.invoice.invoiceNumber %></p>
+                                </div>
+                                <div class="date">
+                                    <p><%= order.invoice.date %></p>
+                                </div>
+                                <div class="amount">
+                                    <p><%= order.invoice.amount %></p>
+                                </div>
+                                <div class="discount">
+                                    <p><%= order.invoice.discount %></p>
+                                </div>
+                                <div class="total-gst">
+                                    <p><%= order.invoice.totalGst %></p>
+                                </div>
+                                <div class="received">
+                                    <p><%= order.invoice.received %></p>
+                                </div>
+                                <div class="balance">
+                                    <p><%= order.invoice.balance %></p>
+                                </div>
+                                <div class="total-amount">
+                                    <p><%= order.invoice.totalAmount %></p>
+                                </div>
+                                <div class="processed-by">
+                                    <p><%= order.user.name %></p>
+                                </div>
+                                <div class="ord-detail">
+                                    <img
+                                        id="<%= order.invoice.invoiceNumber %>"
+                                        src="images/icons8_info_208px.png"
+                                        alt="BUY"
+                                        onclick="showDetails('<%= order.invoice.invoiceNumber %>')" />
+                                </div>
+                            </div>
+                            <% }); %>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

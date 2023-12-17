@@ -377,8 +377,10 @@ function sendOrderToServer() {
     let billBox = document.getElementsByClassName('bill-box')[0];
     let order = {};
 
-    order['invoiceNumber'] =
-        document.getElementById('invoice-number').innerText;
+    order['invoiceNumber'] = document
+        .getElementById('invoice-number')
+        .innerText.split('#')[1]
+        .trim();
     order['date'] = document.getElementById('date').innerText;
     order['amount'] = document.getElementById('invoice-total').innerText;
     order['discount'] = document.getElementById('discount-amount').innerText;
@@ -393,8 +395,7 @@ function sendOrderToServer() {
         let product = {};
         product['name'] = billBox.children[1].children[i].children[0].innerText;
         product['qty'] = billBox.children[1].children[i].children[1].innerText;
-        product['rate'] =
-            billBox.children[1].children[i].children[2].innerText;
+        product['rate'] = billBox.children[1].children[i].children[2].innerText;
         product['gst'] = billBox.children[1].children[i].children[3].innerText;
         product['gstAmount'] =
             billBox.children[1].children[i].children[4].innerText;
