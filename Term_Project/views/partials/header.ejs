@@ -2,44 +2,44 @@
     <a href="/">
         <img id="logo" src="images/logoX.png" alt="Logo" />
     </a>
+    <% if (req.session.user) { %>
+        <div class="user-info">
+            <p>Welcome, <%= req.session.user.role %>  <%= req.session.user.name %> </p>
+        </div>
+    <% } %>
     <nav>
-        <% if (req.session.user) { %> <% if (req.session.user.role ===
-        'cashier') { %>
-        <!-- Display links for cashier -->
-        <a href="/home">Home</a>
-        <a href="/orders">Orders</a>
-        <% } else if (req.session.user.role === 'manager') { %>
-        <!-- Display links for manager -->
-        <a href="/home">Home</a>
-        <a href="/orders">Orders</a>
-        <a href="/products">Products</a>
-        <a href="/dashboard">Dashboard</a>
-        <a href="/register">Register</a>
-        <!-- Add more links for manager as needed -->
-        <% } %>
+        <% if (req.session.user) { %> 
+            <% if (req.session.user.role === 'cashier') { %>
+                <!-- Display links for cashier -->
+                <a href="/home" class="<%= req.url === '/home' ? 'active' : '' %>">Home</a>
+                <a href="/orders" class="<%= req.url === '/orders' ? 'active' : '' %>">Orders</a>
+            <% } else if (req.session.user.role === 'manager') { %>
+                <!-- Display links for manager -->
+                <a href="/home" class="<%= req.url === '/home' ? 'active' : '' %>">Home</a>
+                <a href="/orders" class="<%= req.url === '/orders' ? 'active' : '' %>">Orders</a>
+                <a href="/products" class="<%= req.url === '/products' ? 'active' : '' %>">Products</a>
+                <a href="/dashboard" class="<%= req.url === '/dashboard' ? 'active' : '' %>">Dashboard</a>
+                <a href="/register" class="<%= req.url === '/register' ? 'active' : '' %>">Register</a>
+                <!-- Add more links for manager as needed -->
+            <% } %>
 
-        <!-- Common links for all logged-in users -->
-        <a href="#" onclick="logout()">Logout</a>
+            <!-- Common links for all logged-in users -->
+            <a href="#" onclick="logout()">Logout</a>
         <% } else { %>
-        <!-- If user is not logged in, show only login link -->
-        <a href="/login">Login</a>
+            <!-- If user is not logged in, show only login link -->
+            <a href="/login" class="<%= req.url === '/login' ? 'active' : '' %>">Login</a>
         <% } %>
     </nav>
 </header>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
     function logout() {
-        $.ajax({
-            url: '/logout',
-            type: 'POST',
-            success: function (data) {
-                window.location.href = '/login';
-            },
-            error: function (error) {
-                alert(error.responseJSON.error); // Handle the error
-            },
-        });
-        return false; // Prevent the default link behavior
+    $.ajax({
+        url: '/logout',
+        method: 'POST',
+        success: function() {
+            window.location.href = '/login';
+        }
+    });
     }
 </script>

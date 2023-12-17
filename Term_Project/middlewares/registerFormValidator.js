@@ -20,7 +20,7 @@ function registerFormValidator(req, res, next) {
         .error(new Error('Please enter a valid email address!'));
 
     const roleSchema = Joi.string()
-        .valid('manager', 'cashier') // Add more valid roles as needed
+        .valid('Manager', 'Cashier') // Add more valid roles as needed
         .required()
         .error(new Error('Please select a valid role!'));
 
