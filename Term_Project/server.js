@@ -36,7 +36,7 @@ app.use(
 
 app.get('/', function (req, res) {
     console.log(req.session.user);
-    res.render('home', { req: req });
+    res.render('login', { req: req });
 });
 
 app.get('/home', function (req, res) {

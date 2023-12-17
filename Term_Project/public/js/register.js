@@ -1,5 +1,3 @@
-const e = require('express');
-
 function register() {
     // Get form data
     const email = $('#email').val();
