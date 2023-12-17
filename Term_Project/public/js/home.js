@@ -258,6 +258,7 @@ function billing() {
 }
 
 function printInvoice() {
+    sendOrderToServer();
     let prtContent = document.getElementsByClassName('invoice-container')[0];
     let WinPrint = window.open(
         '',
@@ -369,4 +370,43 @@ function setInvoiceNumber() {
     document.getElementById(
         'invoice-number'
     ).innerHTML = `<span class="bold">Invoice #</span> ${d.getFullYear()}${d.getMonth()}${d.getDate()}${d.getHours()}${d.getMinutes()}${d.getHours()}`;
+}
+
+function sendOrderToServer() {
+    let cartBox = document.getElementsByClassName('cart-box')[0];
+    let billBox = document.getElementsByClassName('bill-box')[0];
+    let order = {};
+
+    order['invoiceNumber'] =
+        document.getElementById('invoice-number').innerText;
+    order['date'] = document.getElementById('date').innerText;
+    order['amount'] = document.getElementById('invoice-total').innerText;
+    order['discount'] = document.getElementById('discount-amount').innerText;
+    order['amountAfterDiscount'] =
+        document.getElementById('amount-after-disc').innerText;
+    order['totalGst'] = document.getElementById('total-gst').innerText;
+    order['received'] = document.getElementById('received').innerText;
+    order['balance'] = document.getElementById('cust-balance').innerText;
+    order['totalAmount'] = document.getElementById('grand-total').innerText;
+    order['products'] = [];
+    for (let i = 0; i < cartBox.children.length; i++) {
+        let product = {};
+        product['name'] = billBox.children[1].children[i].children[0].innerText;
+        product['qty'] = billBox.children[1].children[i].children[1].innerText;
+        product['rate'] =
+            billBox.children[1].children[i].children[2].innerText;
+        product['gst'] = billBox.children[1].children[i].children[3].innerText;
+        product['gstAmount'] =
+            billBox.children[1].children[i].children[4].innerText;
+        product['totalPrice'] =
+            billBox.children[1].children[i].children[5].innerText;
+
+        order['products'].push(product);
+    }
+
+    $.ajax({
+        type: 'POST',
+        url: '/saveOrder',
+        data: { order: order },
+    });
 }

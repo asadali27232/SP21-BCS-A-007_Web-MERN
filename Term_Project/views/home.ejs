@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-3 m-2 p-3 pt-0" id="bill-sec">
                     <div class="top-title">
-                        <h4>
+                        <h4 id="current-login">
                             <% if (req.session.user) { %> <%=
                             req.session.user.role %> <%= req.session.user.name
                             %> <% } %>
