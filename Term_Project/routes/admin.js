@@ -5,6 +5,8 @@ router.get('/products', function (req, res) {
     res.render('products', { req: req });
 });
 
-// Adding more admin routes here
+router.get('/dashboard', function (req, res) {
+    res.render('dashboard', { req: req });
+});
 
 module.exports = router;

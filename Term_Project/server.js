@@ -38,12 +38,9 @@ app.get('/', function (req, res) {
     res.render('login', { req: req });
 });
 
-app.use('/', require('./routes/auth'));
+app.use('/', require('./routes/authentication'));
 
-app.get('/home', isLogin, function (req, res) {
-    console.log(req.session.user);
-    res.render('home', { req: req });
-});
+app.use('/', isLogin, require('./routes/user'));
 
 app.use('/', isLogin, isAdmin, require('./routes/admin'));
 
