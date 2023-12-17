@@ -1,5 +1,6 @@
 module.exports = function (req, res, next) {
     console.log(req.session.user);
+    
     if (req.session.user.role != 'admin') {
         req.session.flash = {
             type: 'danger',

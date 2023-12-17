@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 var session = require('express-session');
-const loginAuth = require('./middlewares/loginAuth');
-const adminAuth = require('./middlewares/adminAuth');
+const isLogin = require('./middlewares/loginAuth');
+const isAdmin = require('./middlewares/adminAuth');
 
 // Connect to MongoDB
 mongoose
@@ -35,17 +35,17 @@ app.use(
 );
 
 app.get('/', function (req, res) {
-    console.log(req.session.user);
     res.render('login', { req: req });
 });
 
-app.get('/home', function (req, res) {
+app.use('/', require('./routes/auth'));
+
+app.get('/home', isLogin, function (req, res) {
     console.log(req.session.user);
     res.render('home', { req: req });
 });
 
-app.use('/', require('./routes/admin'));
-app.use('/', require('./routes/auth'));
+app.use('/', isLogin, isAdmin, require('./routes/admin'));
 
 app.listen(5000, () => {
     console.log('Server listening on port 5000');
