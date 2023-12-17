@@ -1,3 +1,9 @@
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        register();
+    }
+}
+
 function register() {
     // Get form data
     const email = $('#email').val();

@@ -1,12 +1,11 @@
 const express = require('express');
 let router = express.Router();
 const loginFormValidator = require('../middlewares/loginFormValidator');
-const registerFormValidator = require('../middlewares/registerFormValidator');
 const User = require('../models/user');
 const bcrypt = require('bcryptjs');
 
 router.get('/login', function (req, res) {
-    res.render('login', { req: req });
+    return res.render('login', { req: req });
 });
 
 router.post('/login', loginFormValidator, async function (req, res) {
@@ -47,30 +46,6 @@ router.post('/login', loginFormValidator, async function (req, res) {
             error: 'Authentication failed!',
         });
     }
-});
-
-router.get('/register', function (req, res) {
-    res.render('register', { req: req });
-});
-
-router.post('/register', registerFormValidator, async function (req, res) {
-    let user = new User(req.body);
-
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(user.password, salt);
-
-    await user
-        .save()
-        .then(() => {
-            return res.send({
-                message: `Registration successful!\nName: ${req.body.name}\nEmail: ${req.body.email}\nRole: ${req.body.role}\nPassword: ${req.body.password}`,
-            });
-        })
-        .catch((err) => {
-            return res.status(500).send({
-                error: 'Email already exists!',
-            });
-        });
 });
 
 router.post('/logout', async function (req, res) {

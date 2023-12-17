@@ -33,14 +33,10 @@
                             id="password"
                             class="input-field"
                             type="password"
-                            placeholder="Password" />
+                            placeholder="Password"
+                            onkeydown="handleKeyPress(event)" />
+                            
                         <button class="btn" onclick="login()">Login</button>
-                        <button
-                            class="btn-register"
-                            onclick="window.location.href='register'"
-                            formaction="register">
-                            Register
-                        </button>
                     </div>
                 </div>
             </div>

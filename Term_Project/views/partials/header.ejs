@@ -3,14 +3,25 @@
         <img id="logo" src="images/logoX.png" alt="Logo" />
     </a>
     <nav>
+        <% if (req.session.user) { %> <% if (req.session.user.role ===
+        'cashier') { %>
+        <!-- Display links for cashier -->
         <a href="/home">Home</a>
+        <a href="/orders">Orders</a>
+        <% } else if (req.session.user.role === 'manager') { %>
+        <!-- Display links for manager -->
+        <a href="/home">Home</a>
+        <a href="/orders">Orders</a>
         <a href="/products">Products</a>
+        <a href="/dashboard">Dashboard</a>
         <a href="/register">Register</a>
-        <% if (req.session.user) { %>
-        <!-- If user is logged in, show logout link -->
+        <!-- Add more links for manager as needed -->
+        <% } %>
+
+        <!-- Common links for all logged-in users -->
         <a href="#" onclick="logout()">Logout</a>
         <% } else { %>
-        <!-- If user is not logged in, show login link -->
+        <!-- If user is not logged in, show only login link -->
         <a href="/login">Login</a>
         <% } %>
     </nav>

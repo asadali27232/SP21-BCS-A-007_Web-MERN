@@ -35,7 +35,7 @@ app.use(
 );
 
 app.get('/', function (req, res) {
-    res.render('login', { req: req });
+    return res.render('login', { req: req });
 });
 
 app.use('/', require('./routes/authentication'));
