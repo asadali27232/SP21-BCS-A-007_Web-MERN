@@ -4,6 +4,7 @@ Welcome to the SP21-BCS-A-007_Web-MERN repository! This repository is dedicated 
 
 ## Repository Structure
 
+
 Here's a quick overview of the repository's structure:
 
 ### Assignments
